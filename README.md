@@ -49,6 +49,16 @@ Write the detailed procedure here
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
 Developed by: Venkatachalam S  RegisterNumber: 24900079
 
+```
+module ex4 (a,b,c,x,y,z,sum,dif,car,bor);
+input a,b,c,x,y,z;
+output sum,dif,car,bor;
+assign sum = a^b^c;
+assign car = a&b | a&c | b&c;
+assign dif = x^y^z;
+assign bor = ~x&z | ~x&y | y&z;
+endmodule
+```
 
 **RTL Schematic**
 ![Screenshot 2024-11-30 132136](https://github.com/user-attachments/assets/763f09ad-ee29-4172-9982-f963e6466e1a)
